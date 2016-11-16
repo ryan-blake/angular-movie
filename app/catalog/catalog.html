@@ -1,0 +1,33 @@
+<div class="well col-sm-10 col-xs-12">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="page-header section-title">{{pageTitle}}</div>
+    </div>
+    <div class="movie-container col-sm-2 col-xs-6" ng-repeat="movie in movieList | paginate:currentPage:pageSize">
+      <a href="#/movie/{{movie.id}}" class="movie-thunb">
+        <img class="thumbnail img-responsive" ng-src="img/posters{{movie.poster_path}}">
+        <h5>{{movie.title}}</h5>
+      </a>
+  </div>
+ </div>
+
+
+<!-- <span  uib-pagination total-items="moviesList.length" ng-model="currentPage" ng-model="currentPage" items-per-page="pageSize"></span> -->
+  <!-- <pagination-controls class="pagination" total-items="movieList.length" ng-model="currentPage" items-per-page="pageSize">
+  </pagination> -->
+  <ul class="well"style="position:absolute;bottom:-100px;" uib-pagination total-items="movieList.length" ng-model="currentPage" max-size="pageSize" class="pagination-sm" boundary-links="true" rotate="true" num-pages="five"></ul>
+
+</div>
+<div style="margin-top:50px;" class="col-sm-2 pull-right">
+  <div class="section-title genre-title"> My genres</div>
+    <div class="list-group">
+      <a href="#" class="list-group-item">
+        <span class="badge">{{movieList.length}}</span>
+        all
+      </a>
+      <a href="#/genre/{{genre.name}}" ng-class="{active: genre.name==genreName}" class="list-group-item" ng-repeat="genre in genreList">
+        <span class="badge">{{genre.total}}</span>
+        {{genre.name}}
+      </a>
+    </div>
+  </div>

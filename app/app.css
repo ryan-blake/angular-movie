@@ -1,0 +1,68 @@
+/* app css stylesheet */
+.pagination {
+	float: right;
+	margin-right: 20px;
+  z-index: 12;
+  position:absolute;
+  bottom: 0;
+  color:black;
+}
+body {
+  margin-top:50px;
+}
+
+.section-title, .navbar-brand {
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 1.1.;
+  font-size: 26px;
+  margin-top: 0px;
+}
+
+.movie-container {
+  height: 250px;
+}
+
+.movie-thumb {
+  text-align: center;
+  color: black;
+}
+
+.movie-thumb h5 {
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+.movie-thumb:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+.thumbnail {
+  margin-bottom: 0px;
+  max-height: 200px;
+}
+
+.moviedetails .poster {
+	float: left;
+	margin-right: 20px;
+}
+
+.moviedetails .movie-title {
+	font-family: arial;
+	font-size:35px;
+	margin-top: 0px;
+}
+
+.movie-details .btn-info {
+	margin-right:5px;
+}
+
+.moviedetails .overview {
+	margin: 5px 17px 10px 2px;
+}
+
+.genre-title {
+	text-align: right;
+	margin-bottom: 10px;
+}
